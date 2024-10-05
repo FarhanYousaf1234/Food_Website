@@ -1,0 +1,116 @@
+/* Container for the Navbar */
+.admin-navbar {
+    background-color: #1d1f27;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    right: 8px;
+    width: 96.3%;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Slide-in animation for the navbar */
+@keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+.navbar-logo h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar-links a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #ff6b6b;
+    transition: width 0.4s;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.navbar-links a:hover::after {
+    width: 100%;
+}
+
+/* Styling for the Auth Section (Login/Logout) */
+.navbar-auth {
+    display: flex;
+    align-items: center;
+}
+
+/* Logout button styling */
+.navbar-logout .logout-btn {
+    background-color: #ff6b6b;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn .icon {
+    margin-right: 8px;
+}
+
+.logout-btn:hover {
+    background-color: #e84a4a;
+}
+
+/* Login button styling */
+.navbar-login .login-btn {
+    background-color: #4caf50; /* Green color for login */
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+
+/* Extra styling for Welcome Admin text */
+.navbar-logout span {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 15px;
+}

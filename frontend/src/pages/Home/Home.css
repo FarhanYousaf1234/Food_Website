@@ -1,0 +1,158 @@
+/* src/pages/Home.css */
+
+.home-container {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero-section {
+    background-image: url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29va2luZ3xlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #c0392b;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Popular Categories */
+  .popular-categories {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .category-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  .category-item {
+    text-align: center;
+    animation: slideInUp 1s ease-in-out;
+  }
+  
+  .category-icon {
+    font-size: 3rem;
+    color: #e74c3c;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes slideInUp {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Featured Restaurants */
+  .featured-restaurants {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .restaurant-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .restaurant-card {
+    text-align: center;
+    animation: fadeIn 2s ease;
+  }
+  
+  .restaurant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Promotions */
+  .promotions {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .promotions-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* How It Works */
+  .how-it-works {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .steps-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .step-icon {
+    font-size: 3rem;
+    color: #e74c3c;
+    margin-bottom: 10px;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .testimonial-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .testimonial-item {
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  .testimonial-icon {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes slideInLeft {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  

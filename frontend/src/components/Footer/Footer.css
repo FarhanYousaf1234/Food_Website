@@ -1,0 +1,38 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #2C3E50;
+    padding: 1.5rem;
+    color: #ECF0F1;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    color: #ECF0F1;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    color: #E74C3C;
+  }
+  
+  /* Footer responsive behavior */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
